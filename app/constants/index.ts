@@ -22,36 +22,48 @@ import {
   thumbnailShoe3,
 } from "@/public/assets/images/index";
 
-type NavLinks = {
+import { StaticImageData } from "next/image";
+
+export type Shoe = {
+  thumbnail: string;
+  bigShoe: StaticImageData;
+};
+
+export type Statistics = {
+  value: string;
+  label: string;
+};
+
+export type NavLinks = {
   href: string;
   label: string;
 };
 
-type Product = {
+export type Product = {
   imgURL: string;
   name: string;
   price: string;
 };
 
-type Service = {
+export type Service = {
   imgURL: string;
   label: string;
   subtext: string;
 };
 
-type Review = {
+export type Review = {
   imgURL: string;
   customerName: string;
   rating: number;
   feedback: string;
 };
 
-type FooterLink = {
+export type FooterLink = {
   title: string;
   links: Array<{ name: string; link: string }>;
 };
 
-type SocialMedia = {
+export type SocialMedia = {
   src: string;
   alt: string;
 };
@@ -61,6 +73,27 @@ export const navLinks = [
   { href: "#about-us", label: "About Us" },
   { href: "#products", label: "Products" },
   { href: "#contact-us", label: "Contact Us" },
+];
+
+export const shoes: Shoe[] = [
+  {
+    thumbnail: thumbnailShoe1,
+    bigShoe: bigShoe1,
+  },
+  {
+    thumbnail: thumbnailShoe2,
+    bigShoe: bigShoe2,
+  },
+  {
+    thumbnail: thumbnailShoe3,
+    bigShoe: bigShoe3,
+  },
+];
+
+export const statistics: Statistics[] = [
+  { value: "1k+", label: "Brands" },
+  { value: "500+", label: "Shops" },
+  { value: "250k+", label: "Customers" },
 ];
 
 export const products: Product[] = [
