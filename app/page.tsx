@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="relative">
       <Nav />
-      <section className="padding">
+      <section className="">
         <Hero />
       </section>
       <section className="padding">
