@@ -139,7 +139,7 @@ export const services: Service[] = [
   },
 ];
 
-export const review: Review[] = [
+export const reviews: Review[] = [
   {
     imgURL: customer1,
     customerName: "Morich Brown",
